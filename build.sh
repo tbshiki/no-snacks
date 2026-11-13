@@ -1,13 +1,13 @@
 #!/bin/sh
-# Builds dist/tbshiki-no-snacks.zip for upload via WordPress admin (Plugins > Add New > Upload).
+# Builds dist/no-snacks.zip for upload via WordPress admin (Plugins > Add New > Upload).
 # macOS / Linux counterpart of build.ps1.
 set -eu
 
-slug="tbshiki-no-snacks"
+slug="no-snacks"
 root=$(cd "$(dirname "$0")" && pwd)
 dist="$root/dist"
 zip_path="$dist/$slug.zip"
-files="$slug.php"
+files="tbshiki-no-snacks.php"
 
 tmp=$(mktemp -d)
 trap 'rm -rf "$tmp"' EXIT

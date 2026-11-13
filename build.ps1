@@ -1,12 +1,12 @@
-# Builds dist/tbshiki-no-snacks.zip for upload via WordPress admin (Plugins > Add New > Upload).
+# Builds dist/no-snacks.zip for upload via WordPress admin (Plugins > Add New > Upload).
 $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.IO.Compression, System.IO.Compression.FileSystem
 
-$slug = 'tbshiki-no-snacks'
+$slug = 'no-snacks'
 $root = $PSScriptRoot
 $dist = Join-Path $root 'dist'
 $zipPath = Join-Path $dist "$slug.zip"
-$files = @("$slug.php")
+$files = @('tbshiki-no-snacks.php')
 
 New-Item -ItemType Directory -Force $dist | Out-Null
 if (Test-Path $zipPath) { Remove-Item $zipPath }

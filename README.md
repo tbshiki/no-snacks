@@ -6,7 +6,7 @@ WordPress 7.2 のランダムコンテンツリダイレクト（`/random/` な�
 
 ## インストール
 
-1. [Releases](https://github.com/tbshiki/no-snacks/releases) から `tbshiki-no-snacks.zip` をダウンロードします。
+1. [Releases](https://github.com/tbshiki/no-snacks/releases) から `no-snacks.zip` をダウンロードします。
 2. 管理画面の「プラグイン」→「プラグインを追加」→「プラグインのアップロード」で zip をインストールします。
 3. **No Snacks** を有効化します。
 
@@ -17,7 +17,7 @@ WordPress 7.2 のランダムコンテンツリダイレクト（`/random/` な�
 sh build.sh   # macOS / Linux
 ```
 
-`dist/tbshiki-no-snacks.zip` が作られます。
+`dist/no-snacks.zip` が作られます。
 
 ## ライセンス
 
